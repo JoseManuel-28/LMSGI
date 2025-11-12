@@ -8,34 +8,91 @@
 <body>
     <h1>Ejemplo inicial formularios</h1>
 
-    <form action="http:/midominio.com/atlas" method= "post">
+    <form action="http:/midominio.com/atlas" method= "get" enctype="multipart/form-data">
+
+        <p>        
+        <label for="provincia" >seleccione provincia <br>
+            <select name="provincia" id="provincia">
+                <option value="Ninguna">Ninguna</option>
+                <option value="CA">cadiz</option>
+                <option value="SE">sevilla</option>
+                <option value="HU">huelva</option>
+                <option value="CO">cordoba</option>
+            </select></label>
+        </p>
+        <p>        
+
+            <label>Texto de su queja: <br>
+                <input type="text" name="queja" size="40" minlength="20" maxlength="40">
+            </label>
+        </p>
+
+        <p>        
+
+            <label>Texto de su queja: <br>
+                <textarea type="text" name="queja" cols="30" ></textarea></label>
+            </label>
+        </p>
+
+
+        <p> 
+                   <label for="micolor"></label>
+                   <input type="color" name="mi color" id="mi color">
+        </p>
+
+
+        <p>Seleccione preferencias   
+
+            <label><input type="checkbox" name="preferencias1"value="C">Cine</label>
+            <label><input type="checkbox" name="preferencias2"value="T">Teatro</label>
+            <label><input type="checkbox" name="preferencias3"value="V">Viajes</label>
+        </p>
+
         
+        <p>Seleccione su modulo preferido <br>
+
+            <label><input type="radio" name="modulo" value="LMSGI">Lenguaje de marcas...</label>
+            <label><input type="radio" name="modulo" value="SI">sistemas...</label>
+            <label><input type="radio" name="modulo" value="BD">base de datos...</label>
+
+        </p>
+
 
         <p>
-            <label for="usuario">nombre del usuario</label> <br>
-            <input type="text" name="usuario" id="usuario">
+            <label> factura de compra <br>
+            <input type="file" name="factura">
+            </label>
+        </p>
 
+
+        <p>
+            <label for="usuario">nombre del usuario<br>
+            <input type="text" name="usuario" id="usuario">
+            </label>
         </p>
 
        
-
         <p>
 
-            <label for="clave">indroduzca la clave</label> <br>
+            <label for="clave">indroduzca la clave <br>
             <input type="password" name="clave" id="clave">
+            </label>
         </p>
+
 
          <p>
              <label>fecha compra<br>
-                <input type="date" name="">
+                <input type="date" name="fcompra" required>
                      </label>
          </p>
 
          
          <p>
              <label>correo electronico <br>
-                <input type="email" name="correo electroico"></label>
+                <input type="email" name="correo electroico" placeholder="use su email personal">
+            </label>
          </p>
+
 
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpiar">
