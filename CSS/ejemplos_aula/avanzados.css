@@ -1,0 +1,35 @@
+/*avanzados.css*/
+
+/*Atributos*/
+[title] {
+    background-color: red;
+}
+
+
+/* sibling */
+h3 ~ h4 {
+    background-color: lightgoldenrodyellow;
+}
+
+
+/*Adyacente*/
+h1 + p {
+    color : rgb(12, 66, 117)
+}
+
+h1 + p,
+h2 + p {
+    background-color: rgb(238, 166, 32);
+}
+
+article h2 {
+    color: lightcoral;
+}
+
+article  p {
+    color:blue;
+}
+
+article  p {
+    color:rgb(164, 46, 211);
+}
